@@ -40,7 +40,8 @@ jobs:
             sudo apt-get install -y python-pip python-dev build-essential
       - run:
           name: Build Project
-          command: npm install
+          command: |
+            npm install
             npm run build
             cd build
             zip ../build.zip -r *.[^.]*
@@ -76,7 +77,8 @@ jobs:
             sudo apt-get install -y python-pip python-dev build-essential
       - run:
           name: Build Project
-          command: npm install
+          command: |
+            npm install
             npm run build
             cd build
             zip ../build.zip -r *.[^.]*
