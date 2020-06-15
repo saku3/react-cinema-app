@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Paginate.scss';
 
-export const Paginate = (props) => {
+const Paginate = (props) => {
   const { currentPage, totalPages, paginate } = props;
   const [page, setPage] = useState();
   const [totalPageNumber, setTotalPageNumber] = useState();

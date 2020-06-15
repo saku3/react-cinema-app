@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './Slideshow.scss';
 
-export const Slideshow = (props) => {
+const Slideshow = (props) => {
   const { images, auto, showArrows } = props;
   const [state, setState] = useState({
     slideIndex: 0,
