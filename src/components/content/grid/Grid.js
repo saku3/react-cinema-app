@@ -2,9 +2,9 @@ import React from 'react';
 import Proptypes from 'prop-types';
 
 import './Grid.scss';
-import { Rating } from '../rating/Rating';
+import Rating from '../rating/Rating';
 
-export const Grid = ({ images }) => {
+const Grid = ({ images }) => {
   return (
     <>
       <div className="grid">
@@ -31,7 +31,7 @@ export const Grid = ({ images }) => {
 };
 
 Grid.propTypes = {
-  images: Proptypes.object.isRequired
+  images: Proptypes.array.isRequired
 };
 
 export default Grid;

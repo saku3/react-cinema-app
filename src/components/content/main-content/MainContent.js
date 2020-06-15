@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import './MainContent.scss';
-import { Slideshow } from '../slide-show/Slideshow';
-import { Paginate } from '../paginate/Paginate';
-import { Grid } from '../grid/Grid';
+import Slideshow from '../slide-show/Slideshow';
+import Paginate from '../paginate/Paginate';
+import Grid from '../grid/Grid';
 
 const MainContent = () => {
   const images = [
