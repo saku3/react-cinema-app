@@ -15,6 +15,11 @@ const Slideshow = (props) => {
   let currentSlideIndex = 0;
 
   useEffect(() => {
+    setState({
+      ...state,
+      slideIndex: 0,
+      slideShow: images[0]
+    });
     if (auto) {
       const timeInterval = setInterval(() => {
         autoMovieSlide();
@@ -27,7 +32,7 @@ const Slideshow = (props) => {
       };
     }
     // eslint-disable-next-line
-  }, []);
+  }, [images]);
 
   const autoMovieSlide = () => {
     let lastIndex = 0;
