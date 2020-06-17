@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './Paginate.scss';
 
-export const Paginate = (props) => {
+const Paginate = (props) => {
   const { currentPage, totalPages, paginate } = props;
   const [page, setPage] = useState();
   const [totalPageNumber, setTotalPageNumber] = useState();
@@ -21,7 +21,7 @@ export const Paginate = (props) => {
       <button className={page > 1 ? 'paginate-button' : 'paginate-button disable'} onClick={() => paginate('prev')}>
         Prev
       </button>
-      <button className={page !== totalPageNumber ? 'paginate-button' : 'paginate-button disable'} onClick={() => paginate('next')}>
+      <button className={page === totalPageNumber ? 'paginate-button disable' : 'paginate-button'} onClick={() => paginate('next')}>
         Next
       </button>
     </>

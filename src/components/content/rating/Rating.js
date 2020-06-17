@@ -3,7 +3,7 @@ import Proptypes from 'prop-types';
 
 import './Rating.scss';
 
-export const Rating = ({ rating, totalStars, className }) => {
+const Rating = ({ rating, totalStars, className }) => {
   const [numberOfStars, setNumberOfStars] = useState();
   const ratingRef = useRef();
 
