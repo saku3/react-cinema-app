@@ -167,7 +167,7 @@ workflows:
                 - master
       - deploy-to-aws-s3:
           requires:
-            - prettier
+            - unit-test
           filters:
             branches:
               only:
